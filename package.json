@@ -1,7 +1,7 @@
 {
   "name": "shop",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://sirdroj.github.io/shop/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.16",
