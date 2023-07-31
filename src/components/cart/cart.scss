@@ -1,0 +1,22 @@
+.cart{
+    margin-top: 2rem;
+display: flex;
+    .products{
+        
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    // justify-content: center;
+    }
+    .total{
+        width: 20%;
+        
+        // height: 100vh;
+        div{
+            border: solid;
+            padding: 0%;
+            padding: 3rem;
+        }
+    }
+}

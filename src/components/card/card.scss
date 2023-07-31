@@ -1,0 +1,23 @@
+.card{
+    width: 9rem;
+    // height: 300px;
+    border-style:outset;
+    border-radius: 10px;
+    border-color: white;
+    padding: 20px;
+    img{
+        height: 7rem;
+        width: 7rem;
+    }
+    .producrName{
+        overflow: hidden;
+        height: 2rem;
+        font-size: 18px;
+    }
+    p{
+        margin: 0;
+    }
+    button{
+        border-radius:10px ;
+    }
+}
