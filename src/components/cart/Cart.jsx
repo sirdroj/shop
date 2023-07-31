@@ -20,7 +20,7 @@ const Cart = ({add,remove,cart,total,checkout}) => {
         
             )
     }
-    {ctn?"no items to display":""}
+    {ctn?<h2>no items to display 😒</h2>:""}
         </div>
     
         <div className='total'>
