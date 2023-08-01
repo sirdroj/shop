@@ -5,7 +5,7 @@ import cartimg from "../../assets/cart.png"
 const Navbar2 = ({setpg,username}) => {
   return (
     <nav class="navbar">
-    <div class="logo">toystore.com</div>
+    <div class="logo" onClick={()=>setpg(1)}>toystore.com</div>
     
     {/* <!-- NAVIGATION MENU --> */}
     <ul class="nav-links">
