@@ -7,6 +7,8 @@ import Home from "./components/home/Home";
 import Cart from "./components/cart/Cart";
 import Login from "./components/login/Login";
 import Navbar2 from "./components/navbar/Navbar2";
+import Contact from "./components/contact/Contact";
+import User from "./components/user/User";
 function App() {
   const [cart, setcart] = useState({
     1: 0,
@@ -62,6 +64,12 @@ const [username,setusername]=useState("")
         break;
       case 2:
         componentToRender = <Cart add={add} remove={remove} cart={cart} total={total} checkout={checkout}/>
+        break;
+      case 3:
+        componentToRender =<Contact />
+        break;
+      case 4:
+        componentToRender = <User username={username}/>
         break;
     }
     return(componentToRender)

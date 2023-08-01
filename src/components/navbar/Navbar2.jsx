@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Navbar2.scss"
 import usericon from "../../assets/usericon.png"
 import cartimg from "../../assets/cart.png"
@@ -16,10 +16,14 @@ const Navbar2 = ({setpg,username}) => {
 
       {/* <!-- NAVIGATION MENUS --> */}
       <div class="menu">
-      <li className='user'><img src={usericon} />Hellow, {username}</li>
-        <li onClick={()=>setpg(1)}>Home</li>
-        <li>Contact</li>
-        <li onClick={()=>setpg(2)}>Cart</li>
+      <li className='user' onClick={()=>{setpg(4)
+        document.getElementById("checkbox_toggle").checked = false;}}><img src={usericon} />Hellow, {username.length>0?username:"User"}</li>
+        <li onClick={()=>{setpg(1)
+        document.getElementById("checkbox_toggle").checked = false;}}>Home</li>
+        <li onClick={()=>{setpg(3)
+        document.getElementById("checkbox_toggle").checked = false;}}>Contact</li>
+        <li onClick={()=>{setpg(2)
+        document.getElementById("checkbox_toggle").checked = false;}}>Cart</li>
       </div>
     </ul>
   </nav>
