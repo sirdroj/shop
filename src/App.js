@@ -6,6 +6,7 @@ import { PRODUCTS } from "./products";
 import Home from "./components/home/Home";
 import Cart from "./components/cart/Cart";
 import Login from "./components/login/Login";
+import Navbar2 from "./components/navbar/Navbar2";
 function App() {
   const [cart, setcart] = useState({
     1: 0,
@@ -67,13 +68,13 @@ const [username,setusername]=useState("")
   }
   const myc=<div className="App flex">
 
-  <Navbar setpg={setpg} username={username}/>
+  <Navbar2 setpg={setpg} username={username}/>
   {MyComponent(pg)}
 </div>
   return (
 
     <div className="App flex">
-
+      {/* <Navbar2 setpg={setpg} username={username}/> */}
       {(() => {
         if (login) {
           return myc;
