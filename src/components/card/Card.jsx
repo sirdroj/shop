@@ -7,6 +7,14 @@ const Card = ( {product,add,remove,cart}) => {
           <p className='producrName'>{product.productName}</p>
           <p>₹{product.price} </p>
           <div className="btns">
+          <button
+              onClick={() => {
+                remove(product.id);
+              }}
+            >
+              remove
+            </button>
+            <p>{cart[product.id]}</p>
             <button
               onClick={() => {
                 add(product.id);
@@ -14,14 +22,7 @@ const Card = ( {product,add,remove,cart}) => {
             >
               add
             </button>
-            <p>{cart[product.id]}</p>
-            <button
-              onClick={() => {
-                remove(product.id);
-              }}
-            >
-              remove
-            </button>
+            
           </div>
         </div>
   )

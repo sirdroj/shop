@@ -156,6 +156,9 @@ input[type=checkbox] {
   
   /* APPLYING MEDIA QUERIES */
   @media (max-width: 768px) {
+    .navbar{
+      height:25px;
+    
    .menu {
       display:none;
       position: absolute;
@@ -193,4 +196,8 @@ input[type=checkbox] {
     .dropdown li:hover {
       background-color: #4c9e9e;
     }
+    .logo{
+      font-size: 18px;
+    }
   }
+}
